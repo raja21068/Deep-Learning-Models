@@ -1,0 +1,1 @@
+# Federated-LearningWe wish to explore several possible approaches:1. server pulling gradient update from clients;2. clients eagerly train and push updates to server;3. extend to multi-server; servers gossip to sync;4. client-only p2p gradient updates
