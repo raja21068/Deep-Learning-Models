@@ -1,0 +1,13 @@
+shell_scripts/*
+*.pyc
+*.pickle
+*.ipynb_checkpoints*
+*.npy
+*.pkl
+*.log
+*.png
+*.jpg
+__pycache__/*
+.idea/*
+
+!/assets/*
