@@ -1,40 +1,9 @@
 
 
 
-[<img src="https://img.shields.io/badge/chat-slack%20channel-75BBC4.svg">](https://join.slack.com/t/mdtoolkit/shared_invite/enQtNTQ3MjY2MzE0MDg2LWNjY2I2Njc5MTY0NmM0ZWIxNmQwZDRhYzk2MDdhM2QxYjliYTcwYzhkNTAxYmRkMDA0MjcyNDMyYjllNTZhY2M)
-<p align="center"><img src="assets/mdt_logo_2.png"  width=450></p><br>
-
-Copyright © German Cancer Research Center (DKFZ), <a href="https://www.dkfz.de/en/mic/index.php">Division of Medical Image Computing (MIC)</a>. Please make sure that your usage of this code is in compliance with the code <a href="https://github.com/pfjaeger/medicaldetectiontoolkit/blob/master/LICENSE">license</a>.  
-
-## Overview
-This is a comprehensive framework for object detection featuring:
-- 2D + 3D implementations of prevalent object detectors: e.g. Mask R-CNN [1], Retina Net [2], Retina U-Net [3]. 
-- Modular and light-weight structure ensuring sharing of all processing steps (incl. backbone architecture) for comparability of models.
-- training with bounding box and/or pixel-wise annotations.
-- dynamic patching and tiling of 2D + 3D images (for training and inference).
-- weighted consolidation of box predictions across patch-overlaps, ensembles, and dimensions [3].
-- monitoring + evaluation simultaneously on object and patient level. 
-- 2D + 3D output visualizations.
-- integration of COCO mean average precision metric [5]. 
-- integration of MIC-DKFZ batch generators for extensive data augmentation [6].
-- easy modification to evaluation of instance segmentation and/or semantic segmentation.
-<br/>
-[1] He, Kaiming, et al.  <a href="https://arxiv.org/abs/1703.06870">"Mask R-CNN"</a> ICCV, 2017<br>
-[2] Lin, Tsung-Yi, et al.  <a href="https://arxiv.org/abs/1708.02002">"Focal Loss for Dense Object Detection"</a> TPAMI, 2018.<br>
-[3] Jaeger, Paul et al. <a href="http://arxiv.org/abs/1811.08661"> "Retina U-Net: Embarrassingly Simple Exploitation
-of Segmentation Supervision for Medical Object Detection" </a>, 2018
-
-[5] https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py<br/>
-[6] https://github.com/MIC-DKFZ/batchgenerators<br/><br>
-
-## How to cite this code
-Please cite the original publication [3].
-
 ## Installation
 Setup package in a virtual environment:
 ```
-git clone https://github.com/pfjaeger/medicaldetectiontoolkit.git .
-cd medicaldetectiontoolkit
 virtualenv -p python3.6 venv
 source venv/bin/activate
 pip3 install -e .
@@ -128,10 +97,6 @@ Input images + ground truth annotations + output predictions of a sampled valida
 <hr>
 Zoomed into the last two lines of the plot:<br><br><br>
 <img src="assets/output_monitoring_2.png"  width=700>
-
-
-## License
-This framework is published under the [Apache License Version 2.0](LICENSE).
 
 
 
